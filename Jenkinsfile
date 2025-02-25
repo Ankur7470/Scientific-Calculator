@@ -44,8 +44,6 @@ pipeline {
                     ansiblePlaybook(
                         playbook: 'deploy.yml',
                         inventory: 'inventory',
-			credentialsId: 'UD2Z19N4hf8TaoOVadmxIeFf3ytW2k5zfsd2liAyhBM',
-           		extras: '-v'
                     )
                 }
             }
