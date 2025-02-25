@@ -44,7 +44,6 @@ pipeline {
                     ansiblePlaybook(
                         playbook: 'deploy.yml',
                         inventory: 'inventory'
-			extras: '-v'
                     )
                 }
             }
