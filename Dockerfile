@@ -14,6 +14,10 @@
 # Use a base image with CMake and GCC
 FROM ubuntu:20.04
 
+# Set environment variables to avoid interactive prompts
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=Etc/UTC
+
 # Install dependencies
 RUN apt-get update && \
     apt-get install -y cmake gcc build-essential
